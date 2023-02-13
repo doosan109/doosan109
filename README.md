@@ -39,3 +39,14 @@ Here are some ideas to get you started:
   * git config --global user.email "doosan109@naver.com"
   * git config --global user.name "doosan109"
   * https://github.com/freshmea
+  * param list
+  * ros2 param list
+  * ros2 param get /turtlesim background_r
+  * ros2 param get /turtlesim background_g
+  * ros2 param get /turtlesim background_b
+  * ros2 param dump /turtlesim
+  * cat turtlesim.yaml
+  * ros2 param load /turtlesim turtlesim.yaml
+  * ros2 action list -t
+  * ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: 1.7}"
+  * ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml
