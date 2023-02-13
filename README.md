@@ -36,4 +36,6 @@ Here are some ideas to get you started:
   * ros2 service call /spawn turtlesim/srv/Spawn "{x: 5.5, y: 9, theta: 1.57, name: 'leonardo'}"
   * ros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist '{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}'
   * history
-
+  * git config --global user.email "doosan109@naver.com"
+  * git config --global user.name "doosan109"
+  * https://github.com/freshmea
