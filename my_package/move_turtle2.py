@@ -22,22 +22,21 @@ class M_turtle(Node):
     msg1.angular.z = 2.5
 
     msg2 = Twist()
-    msg2.linear.x = self.vel
+    msg2.linear.x = self.vel*2
     msg2.linear.y = 0.0
     msg2.linear.z = 0.0
     msg2.angular.x = 0.0
     msg2.angular.y = 0.0
-    msg2.angular.z = 2.5
+    msg2.angular.z = 1.5
 
     self.pub1.publish(msg1)
     self.pub2.publish(msg2)
 
-  
-    
+    # self.get_logger().info(f'Seding message: [{msg}]')
+
     self.vel += 0.04
     if self.vel > 3.0:
       self.vel = 0.0
-
 
 def main():
   rclpy.init()
